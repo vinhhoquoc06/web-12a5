@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    /* background-color: darkkhaki; */
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-haft {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+ 
+/* CSS RIÊNG */
+
+#main {
+}
+
+#header {
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: center;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 24px;
+    font-weight: 600;
+}
+
+#nav li > a {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+#nav li:hover > a {
+    color: rgb(0, 238, 255);
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+#header a {
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+#header  a:after {
+    content: "";
+    position: absolute;
+    background-color: coral;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -0.2px;
+}
+
+#header  a:hover:after {
+    width: 100%;
+    transition: 0.7s;
+}
+
+#nav .shoping-icon {
+    line-height: 70px;
+    margin-left: 5px;
+}
+
+#header .search-btn {
+    float: right;
+    right: 0;
+    font-size: 20px;
+    padding: 12px 30px;
+    font-weight: 700;
+}  
+
+#header .search-btn:hover {
+    background-color: rgb(0, 238, 255);
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 50%;
+}
+
+#header .search-icon {
+    color: rgb(0, 0, 0);
+    line-height: 46px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 70px;
+}
+
+#slider .img-12a5 {
+
+}
+
+#content {
+    /* background-color: burlywood; */
+    background-image: url(/asset/img/mountain.jpg);
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    text-align: center;
+   padding-top: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#content .section-subheading {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color:rgb(122, 122, 122);
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+#content .text-12a5 {
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-align: justify;
+    line-height: 1.5;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#content .member-item {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#content .section-heading-mem {
+    text-align: center;
+   padding-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#content .khanhdeptrai,
+#content .kietlac,
+#content .laudaitinhdai ,
+#content .ve-tran,
+#content .vinh-khanh,
+#content .tuyen-khanh,
+#content .nbh-khanh,
+#content .kietlac2 {
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 10%;
+}
+
+#content .member-item2 {
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+#content .member-item > img:hover {
+}
+
+#content .khanhdeptrai:hover {
+        transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+}
+
+.kietlac:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+}
+
+.laudaitinhdai:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+
+}
+
+.vinh-khanh:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+
+}
+
+.ve-tran:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+}
+
+.tuyen-khanh:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+}
+
+.nbh-khanh:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+}
+
+.kietlac2:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.9s;
+}
+
+#contact {
+    margin-bottom: 100px;
+}
+
+.contact-info i [class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+#contact .contact-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact .ctc-heading {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+
+#contact .ctc-subheading {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color:rgb(122, 122, 122);
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+#contact .contact-content {
+    margin-top: 48px;
+    margin-left: 32%;
+    font-family: monospace;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+#contact .contact-form {
+    font-style: 15px;
+    margin-left: 100px;
+}
+
+#contact .message {
+    line-height: 6;
+}
+
+.contact-form .btn-send {
+    margin-top: 16px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    outline: none;
+    margin-bottom: 100px;
+}
+
+.contact-form .btn-send:hover {
+    background-color:rgb(0, 238, 255);
+    color: #000;
+    transition: 0.7s;
+}
+
+#footer {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#footer .social > a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    font-size: 20px;
+}
+
+#footer .copyright {
+    margin-top: 20px;
+}
+
+#footer .copyright > a {
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+
