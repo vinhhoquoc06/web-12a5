@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    /* background-color: darkkhaki; */
+    background-color: rgba(255, 255, 255, 0.473);
 }
 
 .mt-8 {
@@ -47,7 +47,7 @@ body {
 
 #header {
     height: 70px;
-    background-color: rgb(255, 255, 255);
+    background-color: blanchedalmond;
     position: fixed;
     top: 0;
     left: 0;
@@ -80,9 +80,11 @@ body {
 }
 
 #nav li:hover > a {
-    color: rgb(0, 238, 255);
-    font-weight: 600;
+    color: rgb(27, 142, 150);
+    font-weight: 500;
     transition: 0.4s;
+    background-color: rgba(205, 218, 241, 0.616);
+    transition: 0.5s;
 }
 
 #header a {
@@ -357,6 +359,19 @@ body {
 
 #footer .copyright > a {
     color: rgba(0,0,0,0.6);
+}
+
+#footer .social > a:hover {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 238, 255);
+    transition: 0.4s;
+}
+
+#footer .copyright > a:hover {
+    color: rgba(0,0,0,0.6);
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
 }
 
 
